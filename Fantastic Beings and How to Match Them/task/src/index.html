@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Fantastic Beings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<div id="board">
+    <header id="status-bar">
+        <div class="flex-item-status-bar being" id="beings-for-win">
+            <img class="zouwu-img"
+                    src="./assets/zouwu.png"
+                    alt="zouwu image character on the status bar"
+            /><span class="zouwu">3</span>
+            <img class="kelpie-img"
+                    src="./assets/kelpie.png"
+                    alt="kelpie image character on the status bar"
+            /><span class="kelpie">0</span>
+        </div>
+        <div class="flex-item-status-bar moves">
+            <p class="moves-board">Moves: <span id="moves-value"></span></p>
+        </div>
+        <div class="flex-item-status-bar score">
+            <p class="score-board">Score: <span id="score-value">0</span></p>
+        </div>
+    </header>
+    <table id="map"></table>
+    <footer id="game-footer">
+    </footer>
+</div>
+<script src="master.js"></script>
+</body>
+</html>
